@@ -59,3 +59,7 @@ Install them into a repository with:
 ```bash
 apm install KaxaNuk/KaxaNuk-Agent-Skills/common --target claude
 ```
+
+With the KaxaNuk Researcher, nothing is installed per repository: `apm install -g
+KaxaNuk/KaxaNuk-Researcher` brings `common`, with every other KaxaNuk package, once for your user, so
+every folder you open — every strategy included — has the rules.
