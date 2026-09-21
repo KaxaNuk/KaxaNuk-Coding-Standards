@@ -43,3 +43,19 @@ As such, we:
 
 * Type-hint every function we declare.
 * Write automated unit tests for every module function we declare. 
+
+
+## How these are enforced
+
+This document is the *why*, and it changes rarely. Its enforceable form lives in
+[`KaxaNuk/KaxaNuk-Agent-Skills`](https://github.com/KaxaNuk/KaxaNuk-Agent-Skills), in the `common`
+package: `python-pep8` and `python-bloom-code` state the rules an AI assistant applies while it
+writes Python, and the `bloom-code-lint` skill ships a checker that reports every mechanical
+violation with a remediation hint. That package is versioned; when a rule here changes, the change
+lands there too.
+
+Install them into a repository with:
+
+```bash
+apm install KaxaNuk/KaxaNuk-Agent-Skills/common --target claude
+```
